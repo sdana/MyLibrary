@@ -11,6 +11,7 @@ namespace MyLibrary.Models
         [Key]
         public int BookId { get; set; }
 
+        [Required]
         public string Title { get; set; }
 
         [Required]
@@ -21,8 +22,11 @@ namespace MyLibrary.Models
         public bool CheckedOut { get; set; }
 
         [Display (Name ="Library")]
+        [Required]
         public int LibraryId { get; set; }
 
         public Library Library { get; set; }
+
+        public int PatronId { get; set; }
     }
 }
