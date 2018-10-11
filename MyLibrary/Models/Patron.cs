@@ -22,8 +22,8 @@ namespace MyLibrary.Models
 
         public Library Library { get; set; }
 
-        public ICollection<Book> CheckedOutBooks { get; set; }
 
+        public ICollection<Book> CheckedOutBooks { get; set; }
 
     }
 }
